@@ -31,9 +31,9 @@ inquirer
             message: 'Add the Usage, please',
         },
         {
-            type: 'checkbox',
+            type: 'list',
             message: 'Choose the License, please',
-            name: 'stack',
+            name: 'license',
             choices: ['MIT', 'Apache 2.0', 'Boost Software', 'no License']
         },
         {
@@ -55,7 +55,7 @@ inquirer
     .then((response) => {
         const filename = `${response.name.toLowerCase().split(' ').join('')}.md`;
 
-        fs.writeFile(filename, 
+        fs.writeFile('demo/filename', 
     `# Welcome to ${response.title}🪄
 
     ## Description
@@ -78,11 +78,3 @@ inquirer
             err ? console.log(err) : console.log('Success!')
         );
     });
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
