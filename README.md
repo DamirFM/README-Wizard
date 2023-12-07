@@ -22,12 +22,16 @@
 
 ## Boost Software
 
-[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)]
+![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)
 
 ## Apache 2.0
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
+
+(https://opensource.org/licenses/Apache-2.0)
 
 ## MIT 
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+(https://opensource.org/licenses/MIT)
