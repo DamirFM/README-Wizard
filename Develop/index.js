@@ -1,5 +1,5 @@
 // TODO: Include packages needed for this application
-const markdowm = require('./utils/generateMarkdown')
+const markdown = require('./utils/generateMarkdown');
 const inquirer = require('inquirer');
 const fs = require('fs');
 // TODO: Create an array of questions for user input
@@ -34,7 +34,8 @@ inquirer
             type: 'list',
             message: 'Choose the License, please',
             name: 'license',
-            choices: ['MIT', 'Apache 2.0', 'Boost Software', 'no License']
+            choices: ['MIT', 'Apache 2.0', 'Boost Software', 'Not selected']
+
         },
         {
             type: 'input',
@@ -50,31 +51,21 @@ inquirer
             type: 'input',
             name: 'questions',
             message: 'Add the Questions, please',
+        },
+        {
+            type: 'input',
+            name: 'GitHub',
+            message: 'Please enter your GitHub username',
+        },
+        {
+            type: 'input',
+            name: 'Email',
+            message: 'Please enter your Email address',
         }
     ])
     .then((response) => {
-        const filename = `${response.name.toLowerCase().split(' ').join('')}.md`;
-
-        fs.writeFile('demo/filename', 
-    `# Welcome to ${response.title}🪄
-
-    ## Description
-    ${response.description}
-    ## Content.
-    ${response.content}
-    ## Installation
-    ${response.installation}
-    ## Usage
-    ${response.usage}
-    ## License
-    ${response.license}
-    ## Contributing
-    ${response.contributing}
-    ## Tests
-    ${response.tests}
-    ## Questions
-    ${response.questions}
-    ## Badges`, (err) =>
+        let answers = markdown(response);
+        fs.writeFile('demo/filename.md',answers , (err) =>
             err ? console.log(err) : console.log('Success!')
         );
     });
