@@ -65,7 +65,7 @@ inquirer
     ])
     .then((response) => {
         let answers = markdown(response);
-        fs.writeFile('demo/filename.md',answers , (err) =>
+        fs.writeFile('demo/newReadme.md',answers , (err) =>
             err ? console.log(err) : console.log('Success!')
         );
     });

@@ -1,4 +1,4 @@
-# Welcome to README-WIZARD
+# Welcome to README-WIZARD🪄
 ## Description  ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)(https://opensource.org/licenses/Apache-2.0)
    Readme-Wizard is a command-line application that generates a professional README.md file dynamically based on user input using the Inquirer package in Node.js.
 ## Content.
@@ -29,7 +29,7 @@ This application is covered under Apache 2.0 License
 ## Tests
     N/A
 ## Walkthrough video link
-- 
+- https://drive.google.com/file/d/1BEVOONq7GQ_hYnUkgcXgeu4qqH1w8w0Z/view
 ## Questions
     If you have any questions or issues, please feel free to reach out:
 - GitHub: https://github.com/DamirFM

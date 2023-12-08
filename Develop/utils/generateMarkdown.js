@@ -64,7 +64,7 @@ let renderLicenseSectionData = renderLicenseSection(data.license);
 - [Contributing](#Contributing)
 - [Tests](#Tests)
 - [Questions](#Questions)
-    ${data.content}
+${data.content}
 ## Installation
     ${data.installation}
 ## Usage
