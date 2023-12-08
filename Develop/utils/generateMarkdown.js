@@ -2,13 +2,13 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license === 'MIT') {
-    return '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ';
+    return '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https://opensource.org/licenses/MIT) ';
   } 
   else if  (license === 'Apache 2.0') {
-    return '![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)';
+    return '![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)(https://opensource.org/licenses/Apache-2.0)';
   }
   else if (license === 'Boost Software') {
-    return '![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg) ';
+    return '![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)(https://www.boost.org/LICENSE_1_0.txt) ';
   } 
   else if (license === 'Not selected') {
     return '';
@@ -53,7 +53,7 @@ let renderLicenseSectionData = renderLicenseSection(data.license);
 
   return `
 # Welcome to ${data.title}🪄
-## Description
+## Description  ${renderLicenseBadgeData}
     ${data.description}
     ${renderLicenseBadgeData}
 ## Content.
