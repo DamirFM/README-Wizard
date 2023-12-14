@@ -52,7 +52,7 @@ let renderLicenseLinkData = renderLicenseLink(data.license);
 let renderLicenseSectionData = renderLicenseSection(data.license);
 
   return `
-# Welcome to ${data.title}🪄
+# Welcome to ${data.title}
 ## Description  
     ${data.description}
 
